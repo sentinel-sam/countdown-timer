@@ -1,0 +1,115 @@
+body{
+    background-color: #779c7db2;
+}
+.until{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 1em;
+    background: #009578;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+}
+.header{
+    grid-column: span 4;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    color: #ddd;
+}
+.div-input{
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+}
+.div-input input{
+    width: 40%;
+    height: 38px;
+    display: block;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.div-input input:disabled{
+    background-color: #ac7b84;
+}
+.div-input button{
+    width: 40%;
+    height: 40px;
+    display: block;
+    color: #fff;
+    background-color: #054135;
+    border: 1px white solid;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.div-input button:disabled{
+    background-color: #94001bda;
+}
+.until__component{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.until__numeric{
+    color: #333333;
+    padding: 0.5em 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+.until__unit{
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    color: #94001B;
+}
+.until__event{
+    grid-column: span 4;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 650px){
+    .until{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 160px;
+    }
+    .div-input{
+        height: 80px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .until__component{
+        width: 150px;
+    }
+    .div-input input{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .div-input button{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .until__numeric{
+        padding: 0.3em 0;
+        font-size: 2.5em;
+    }
+    .until__unit{
+        padding-bottom: 0.7em;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="until" id="countdown">
+        <div class="header">Sam CTD</div>
+        <div class="div-input">
+            <input type="date" name="dateInput" id="dateInput" value="" min="2021-12-10">
+            <button class="stop-button" role="button">Stop Countdown</button>
+        </div>
+        <div class="until__component">
+            <div class="until__numeric until__numeric--days">00</div>
+            <div class="until__unit">Days</div>
+        </div>
+        <div class="until__component">
+            <div class="until__numeric until__numeric--hours">00</div>
+            <div class="until__unit">Hours</div>
+        </div>
+        <div class="until__component">
+            <div class="until__numeric until__numeric--minutes">00</div>
+            <div class="until__unit">Minutes</div>
+        </div>
+        <div class="until__component">
+            <div class="until__numeric until__numeric--seconds">00</div>
+            <div class="until__unit">Seconds</div>
+        </div>
+        <div class="until__event"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/duration.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
