@@ -5,9 +5,19 @@ let countdown = document.getElementById("countdown");
 let dateInput = document.getElementById("dateInput");
 let button = document.querySelector('.stop-button');
 
+document.addEventListener('DOMContentLoaded' , function(){
+    let dateSelected = localStorage.getItem('dateSelected');
+    if(dateSelected){
+        activateCountdown(countdown, dateSelected );
+        dateInput.disabled = true;
+    }
+});
+//get selected date from dateInput
 dateInput.addEventListener('input', event => {
     let dateInputValue = event.target.value;
     console.log("DATEVALUE:::", dateInputValue);
+
+    localStorage.setItem('dateSelected', dateInputValue);
 
     activateCountdown(countdown, dateInputValue);
     dateInput.disabled = true;
