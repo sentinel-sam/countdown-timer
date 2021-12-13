@@ -47,22 +47,27 @@ body{
     height: 40px;
     display: block;
     color: #fff;
-    background-color: #054135;
-    border: 1px white solid;
     outline: none;
     border-radius: 6px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #00866c, #009f80);
+    box-shadow:  6px 6px 6px #008b70,
+             -6px -6px 6px #009f80;
 }
 .div-input button:disabled{
-    background-color: #94001bda;
+    border-radius: 5px;
+    background: #009578;
+    box-shadow: inset 9px 9px 7px #006854,
+            inset -9px -9px 7px #00c29c;
 }
 .until__component{
     text-align: center;
-    background-color: #fff;
     border-radius: 5px;
+    background: #009578;
+    box-shadow: inset 10px 10px 28px #00836a,
+            inset -10px -10px 28px #00a786;
 }
 .until__numeric{
-    color: #333333;
+    color:  #f4faf4;
     padding: 0.5em 0;
     font-size: 3em;
     font-weight: bold;
@@ -76,7 +81,7 @@ body{
 .until__event{
     grid-column: span 4;
     text-align: center;
-    color: #fff;
+    color: #f4faf4;
     font-weight: bold;
 }
 
